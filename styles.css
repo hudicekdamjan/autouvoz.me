@@ -428,3 +428,11 @@ a.cinfo__row:hover b{color:#ffd3d2}
   .has-nf-badge .mbar__note i{font-style:normal;color:var(--red)}
   .has-nf-badge .toast{bottom:calc(72px + var(--nf-badge-h,64px) + 12px + env(safe-area-inset-bottom,0px))}
 }
+
+/* ---------- Poziv na Google recenziju (ispod "Naši uvozi") ---------- */
+.rv-cta{display:flex;align-items:center;flex-wrap:wrap;gap:14px 22px;margin-top:34px;padding:22px 26px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.rv-cta p{margin:0;flex:1 1 260px;color:#d4d4da;font-size:15.5px}
+.rv-cta__stars{display:flex;gap:3px;color:#f5b301}
+.rv-cta__stars .ic{width:18px;height:18px}
+.rv-cta .btn .ic{width:18px;height:18px}
+@media (max-width:720px){.rv-cta{padding:20px}.rv-cta .btn{width:100%}}

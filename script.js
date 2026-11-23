@@ -6,7 +6,7 @@ const CONFIG = {
   phone: "+38267491509",            // broj za poziv, WhatsApp i Viber (međunarodni format)
   phoneDisplay: "+382 67 491 509",  // kako se broj prikazuje na sajtu
   email: "",        // npr. "info@autouvoz.me" – prazno = sakriveno na sajtu
-  instagram: "",    // npr. "autouvoz.me" (bez @) – prazno = sakriveno na sajtu
+  instagram: "autouvoz.me", // Instagram profil (bez @) – prazno = sakriveno na sajtu
   // Opciono: endpoint za slanje formi na email (npr. https://formspree.io/f/xxxxxx).
   // Ako je prazno, forme otvaraju WhatsApp sa već popunjenom porukom.
   formEndpoint: ""
@@ -785,7 +785,7 @@ function initContacts() {
     a.rel = "noopener";
   });
   $$("[data-mail]").forEach(a => { a.hidden = !CONFIG.email; if (CONFIG.email) a.href = "mailto:" + CONFIG.email; });
-  $$("[data-insta]").forEach(a => { a.hidden = !CONFIG.instagram; if (CONFIG.instagram) a.href = "https://instagram.com/" + CONFIG.instagram; });
+  $$("[data-insta]").forEach(a => { a.hidden = !CONFIG.instagram; if (CONFIG.instagram) a.href = "https://www.instagram.com/" + CONFIG.instagram + "/"; });
   $$("[data-phone-text]").forEach(el => (el.textContent = CONFIG.phoneDisplay));
   $$("[data-mail-text]").forEach(el => (el.textContent = CONFIG.email));
   $$("[data-insta-text]").forEach(el => (el.textContent = "@" + CONFIG.instagram));
