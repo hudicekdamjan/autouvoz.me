@@ -1,0 +1,3 @@
+U ovaj folder stavite fotografije uvezenih vozila (JPG, oko 1200 px širine, do ~300 KB).
+Zatim u fajlu vozila.js kod vozila upišite npr.  slika: "assets/vozila/bmw-x5.jpg"
+Naziv fajla pišite malim slovima, bez razmaka i bez č/ć/š/ž/đ (npr. skoda-octavia-2020.jpg).
